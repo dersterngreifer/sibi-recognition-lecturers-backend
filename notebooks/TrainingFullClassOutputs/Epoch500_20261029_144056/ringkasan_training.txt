@@ -1,0 +1,93 @@
+============================================================
+        RINGKASAN HASIL TRAINING — SIBI FULL CLASS — 63 KELAS (v2)
+============================================================
+  Arsitektur    : BiLSTM + Attention + Focal Loss + Label Smoothing
+  Kelas         : Adik, Apa, Ayah, Baik, Berapa, Bertemu, Cantik, Dari, Dia, Dimana, Ganteng, Gemuk, Hallo, Hobi, Ibu, Jumat, Jurusan, Kabar, Kakak, Kalian, Kami, Kamis, Kampus, Kamu, Kelas, Keluarga, Kemana, Kenapa, Kita, Kuliah, Kurus, Lucu, Malam, Mau, Mereka, Minggu, Nama, Pagi, Pelit, Pendidikan, Pintar, Pulang, Rabu, Ramah, Rendah Hati, Sabar, Sabtu, Sakit, Sampai Jumpa, Saya, Sekolah, Selamat, Selasa, Semester, Senang, Senin, Siang, Siapa, Sore, Suka, Terimakasih, Tinggal, Umur
+  Jumlah Kelas  : 63
+  Total data    : 6299 (asli) → train diaugmentasi
+  Fitur/frame   : 258
+  Sequence len  : 30 frame @ 30fps = 1.0 detik
+------------------------------------------------------------
+  Train (aug) / Val / Test : 39681 / 945 / 945
+------------------------------------------------------------
+  Test Accuracy : 99.68%
+  Test Loss     : 0.0004
+  Macro F1      : 0.9968
+  Weighted F1   : 0.9968
+  Macro P       : 0.9970
+  Macro R       : 0.9968
+------------------------------------------------------------
+  Epoch terbaik (val_accuracy) : 51
+  Epoch terbaik (val_loss)     : 154
+  Total epoch berjalan         : 156
+  Val Accuracy terbaik         : 100.00%
+  Val Loss terbaik             : 0.0003
+------------------------------------------------------------
+  Per-Class Metrics:
+  Kelas           Precision     Recall   F1-Score    Support
+  --------------------------------------------------
+  Adik               0.9375     1.0000     0.9677         15
+  Apa                1.0000     1.0000     1.0000         15
+  Ayah               1.0000     1.0000     1.0000         14
+  Baik               1.0000     1.0000     1.0000         15
+  Berapa             1.0000     1.0000     1.0000         15
+  Bertemu            1.0000     1.0000     1.0000         15
+  Cantik             1.0000     1.0000     1.0000         15
+  Dari               1.0000     1.0000     1.0000         15
+  Dia                1.0000     1.0000     1.0000         15
+  Dimana             1.0000     1.0000     1.0000         15
+  Ganteng            1.0000     1.0000     1.0000         15
+  Gemuk              1.0000     1.0000     1.0000         15
+  Hallo              1.0000     1.0000     1.0000         15
+  Hobi               1.0000     0.9333     0.9655         15
+  Ibu                1.0000     0.9333     0.9655         15
+  Jumat              1.0000     1.0000     1.0000         16
+  Jurusan            1.0000     1.0000     1.0000         16
+  Kabar              1.0000     1.0000     1.0000         16
+  Kakak              1.0000     1.0000     1.0000          7
+  Kalian             1.0000     0.9333     0.9655         15
+  Kami               1.0000     1.0000     1.0000         15
+  Kamis              1.0000     1.0000     1.0000         15
+  Kampus             1.0000     1.0000     1.0000         15
+  Kamu               1.0000     1.0000     1.0000         15
+  Kelas              1.0000     1.0000     1.0000         16
+  Keluarga           1.0000     1.0000     1.0000         15
+  Kemana             1.0000     1.0000     1.0000         15
+  Kenapa             1.0000     1.0000     1.0000         16
+  Kita               1.0000     1.0000     1.0000         13
+  Kuliah             1.0000     1.0000     1.0000         15
+  Kurus              1.0000     1.0000     1.0000         15
+  Lucu               1.0000     1.0000     1.0000         15
+  Malam              1.0000     1.0000     1.0000         15
+  Mau                1.0000     1.0000     1.0000         16
+  Mereka             0.9375     1.0000     0.9677         15
+  Minggu             1.0000     1.0000     1.0000         15
+  Nama               1.0000     1.0000     1.0000         16
+  Pagi               1.0000     1.0000     1.0000         15
+  Pelit              1.0000     1.0000     1.0000         15
+  Pendidikan         1.0000     1.0000     1.0000         15
+  Pintar             1.0000     1.0000     1.0000         14
+  Pulang             1.0000     1.0000     1.0000         15
+  Rabu               1.0000     1.0000     1.0000         14
+  Ramah              1.0000     1.0000     1.0000         19
+  Rendah Hati        1.0000     1.0000     1.0000         15
+  Sabar              1.0000     1.0000     1.0000         16
+  Sabtu              1.0000     1.0000     1.0000         16
+  Sakit              1.0000     1.0000     1.0000         15
+  Sampai Jumpa       1.0000     1.0000     1.0000         16
+  Saya               1.0000     1.0000     1.0000         15
+  Sekolah            1.0000     1.0000     1.0000         15
+  Selamat            1.0000     1.0000     1.0000         14
+  Selasa             1.0000     1.0000     1.0000         15
+  Semester           1.0000     1.0000     1.0000         13
+  Senang             1.0000     1.0000     1.0000         15
+  Senin              1.0000     1.0000     1.0000         16
+  Siang              1.0000     1.0000     1.0000         14
+  Siapa              1.0000     1.0000     1.0000         16
+  Sore               1.0000     1.0000     1.0000         15
+  Suka               1.0000     1.0000     1.0000         16
+  Terimakasih        1.0000     1.0000     1.0000         15
+  Tinggal            1.0000     1.0000     1.0000         15
+  Umur               0.9375     1.0000     0.9677         15
+------------------------------------------------------------
+============================================================

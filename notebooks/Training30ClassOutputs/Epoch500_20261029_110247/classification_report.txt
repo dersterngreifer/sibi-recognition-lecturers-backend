@@ -1,0 +1,39 @@
+Test Accuracy : 99.77%
+Test Loss     : 0.0015
+
+              precision    recall  f1-score   support
+
+        Adik       1.00      1.00      1.00        15
+         Apa       1.00      1.00      1.00        15
+        Ayah       1.00      1.00      1.00        14
+        Baik       1.00      1.00      1.00        15
+      Berapa       1.00      1.00      1.00        15
+     Bertemu       1.00      1.00      1.00        15
+      Cantik       1.00      1.00      1.00        15
+        Dari       0.94      1.00      0.97        15
+         Dia       1.00      1.00      1.00        15
+      Dimana       1.00      1.00      1.00        15
+     Ganteng       1.00      1.00      1.00        15
+       Gemuk       1.00      1.00      1.00        15
+       Hallo       1.00      1.00      1.00        15
+        Hobi       1.00      1.00      1.00        15
+         Ibu       1.00      1.00      1.00        15
+       Jumat       1.00      1.00      1.00        16
+     Jurusan       1.00      1.00      1.00        16
+       Kabar       1.00      0.94      0.97        16
+       Kakak       1.00      1.00      1.00         7
+      Kalian       1.00      1.00      1.00        15
+        Kami       1.00      1.00      1.00        15
+       Kamis       1.00      1.00      1.00        15
+      Kampus       1.00      1.00      1.00        15
+        Kamu       1.00      1.00      1.00        15
+       Kelas       1.00      1.00      1.00        16
+    Keluarga       1.00      1.00      1.00        15
+      Kemana       1.00      1.00      1.00        15
+      Kenapa       1.00      1.00      1.00        16
+        Kita       1.00      1.00      1.00        13
+      Kuliah       1.00      1.00      1.00        15
+
+    accuracy                           1.00       444
+   macro avg       1.00      1.00      1.00       444
+weighted avg       1.00      1.00      1.00       444

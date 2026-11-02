@@ -1,0 +1,98 @@
+# ==========================================
+# Python & Bytecode
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Jupyter Notebooks & Backups
+# ==========================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb.bak
+*.bak
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Logs & Temporary Files
+# ==========================================
+*.log
+logs/
+output.txt
+*.tmp
+*.temp
+
+# Folder checkpoints / weights jika ada
+checkpoints/
+weights/
+
+# ==========================================
+# Training Run Outputs
+# (Folder hasil training yang berisi grafis dan artefak run)
+# Uncomment baris di bawah jika ingin mengabaikan seluruh folder output training:
+# notebooks/*Outputs/
+# *Outputs/
+# ==========================================
+
+# ==========================================
+# Datasets & Media Files
+# (Video, numpy arrays, dan folder data mentah)
+# ==========================================
+Datasets/
+Lists/
+Raw_Datasets*/
+For_Extract/
+Keypoints*/
+Sample_Extracted_Frames/
+Testing/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.npy
+*.npz
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ==========================================
+# IDEs & Code Editors
+# ==========================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini

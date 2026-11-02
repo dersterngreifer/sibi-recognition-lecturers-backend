@@ -1,0 +1,60 @@
+============================================================
+        RINGKASAN HASIL TRAINING — SIBI 30 KELAS (v2)
+============================================================
+  Arsitektur    : BiLSTM + Attention + Focal Loss + Label Smoothing
+  Kelas         : Adik, Apa, Ayah, Baik, Berapa, Bertemu, Cantik, Dari, Dia, Dimana, Ganteng, Gemuk, Hallo, Hobi, Ibu, Jumat, Jurusan, Kabar, Kakak, Kalian, Kami, Kamis, Kampus, Kamu, Kelas, Keluarga, Kemana, Kenapa, Kita, Kuliah
+  Jumlah Kelas  : 30
+  Total data    : 2958 (asli) → train diaugmentasi
+  Fitur/frame   : 258
+  Sequence len  : 30 frame @ 30fps = 1.0 detik
+------------------------------------------------------------
+  Train (aug) / Val / Test : 18630 / 444 / 444
+------------------------------------------------------------
+  Test Accuracy : 99.77%
+  Test Loss     : 0.0015
+  Macro F1      : 0.9978
+  Weighted F1   : 0.9977
+  Macro P       : 0.9979
+  Macro R       : 0.9979
+------------------------------------------------------------
+  Epoch terbaik (val_accuracy) : 66
+  Epoch terbaik (val_loss)     : 177
+  Total epoch berjalan         : 237
+  Val Accuracy terbaik         : 99.77%
+  Val Loss terbaik             : 0.0016
+------------------------------------------------------------
+  Per-Class Metrics:
+  Kelas           Precision     Recall   F1-Score    Support
+  --------------------------------------------------
+  Adik               1.0000     1.0000     1.0000         15
+  Apa                1.0000     1.0000     1.0000         15
+  Ayah               1.0000     1.0000     1.0000         14
+  Baik               1.0000     1.0000     1.0000         15
+  Berapa             1.0000     1.0000     1.0000         15
+  Bertemu            1.0000     1.0000     1.0000         15
+  Cantik             1.0000     1.0000     1.0000         15
+  Dari               0.9375     1.0000     0.9677         15
+  Dia                1.0000     1.0000     1.0000         15
+  Dimana             1.0000     1.0000     1.0000         15
+  Ganteng            1.0000     1.0000     1.0000         15
+  Gemuk              1.0000     1.0000     1.0000         15
+  Hallo              1.0000     1.0000     1.0000         15
+  Hobi               1.0000     1.0000     1.0000         15
+  Ibu                1.0000     1.0000     1.0000         15
+  Jumat              1.0000     1.0000     1.0000         16
+  Jurusan            1.0000     1.0000     1.0000         16
+  Kabar              1.0000     0.9375     0.9677         16
+  Kakak              1.0000     1.0000     1.0000          7
+  Kalian             1.0000     1.0000     1.0000         15
+  Kami               1.0000     1.0000     1.0000         15
+  Kamis              1.0000     1.0000     1.0000         15
+  Kampus             1.0000     1.0000     1.0000         15
+  Kamu               1.0000     1.0000     1.0000         15
+  Kelas              1.0000     1.0000     1.0000         16
+  Keluarga           1.0000     1.0000     1.0000         15
+  Kemana             1.0000     1.0000     1.0000         15
+  Kenapa             1.0000     1.0000     1.0000         16
+  Kita               1.0000     1.0000     1.0000         13
+  Kuliah             1.0000     1.0000     1.0000         15
+------------------------------------------------------------
+============================================================

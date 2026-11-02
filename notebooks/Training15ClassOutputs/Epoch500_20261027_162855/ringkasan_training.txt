@@ -1,0 +1,45 @@
+============================================================
+        RINGKASAN HASIL TRAINING — SIBI 15 KELAS (v2)
+============================================================
+  Arsitektur    : BiLSTM + Attention + Focal Loss + Label Smoothing
+  Kelas         : Adik, Apa, Ayah, Baik, Berapa, Bertemu, Cantik, Dari, Dia, Dimana, Ganteng, Gemuk, Hallo, Hobi, Ibu
+  Jumlah Kelas  : 15
+  Total data    : 1501 (asli) → train diaugmentasi
+  Fitur/frame   : 258
+  Sequence len  : 30 frame @ 30fps = 1.0 detik
+------------------------------------------------------------
+  Train (aug) / Val / Test : 9450 / 225 / 226
+------------------------------------------------------------
+  Test Accuracy : 100.00%
+  Test Loss     : 0.0014
+  Macro F1      : 1.0000
+  Weighted F1   : 1.0000
+  Macro P       : 1.0000
+  Macro R       : 1.0000
+------------------------------------------------------------
+  Epoch terbaik (val_accuracy) : 58
+  Epoch terbaik (val_loss)     : 219
+  Total epoch berjalan         : 230
+  Val Accuracy terbaik         : 100.00%
+  Val Loss terbaik             : 0.0016
+------------------------------------------------------------
+  Per-Class Metrics:
+  Kelas           Precision     Recall   F1-Score    Support
+  --------------------------------------------------
+  Adik               1.0000     1.0000     1.0000         15
+  Apa                1.0000     1.0000     1.0000         15
+  Ayah               1.0000     1.0000     1.0000         14
+  Baik               1.0000     1.0000     1.0000         15
+  Berapa             1.0000     1.0000     1.0000         15
+  Bertemu            1.0000     1.0000     1.0000         15
+  Cantik             1.0000     1.0000     1.0000         15
+  Dari               1.0000     1.0000     1.0000         15
+  Dia                1.0000     1.0000     1.0000         15
+  Dimana             1.0000     1.0000     1.0000         15
+  Ganteng            1.0000     1.0000     1.0000         15
+  Gemuk              1.0000     1.0000     1.0000         15
+  Hallo              1.0000     1.0000     1.0000         16
+  Hobi               1.0000     1.0000     1.0000         15
+  Ibu                1.0000     1.0000     1.0000         16
+------------------------------------------------------------
+============================================================
